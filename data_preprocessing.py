@@ -58,22 +58,11 @@ for intent in data ['intents']:
     if intent['tag'] not in classes :
         classes.append(intent['tag'])
         stemwords = get_stem_words(words,ignore_words)
-# Add all tags to the classes list
-print(stemwords)
-print(pattern_word_tags_list)
-print(classes)
 
 
-'''
-List of sorted stem words for our dataset : 
 
-['all', 'ani', 'anyon', 'are', 'awesom', 'be', 'best', 'bluetooth', 'bye', 'camera', 'can', 'chat', 
-'cool', 'could', 'digit', 'do', 'for', 'game', 'goodby', 'have', 'headphon', 'hello', 'help', 'hey', 
-'hi', 'hola', 'how', 'is', 'later', 'latest', 'me', 'most', 'next', 'nice', 'phone', 'pleas', 'popular', 
-'product', 'provid', 'see', 'sell', 'show', 'smartphon', 'tell', 'thank', 'that', 'the', 'there', 
-'till', 'time', 'to', 'trend', 'video', 'what', 'which', 'you', 'your']
 
-'''
+
 
 
 # creating a function to make corpus
